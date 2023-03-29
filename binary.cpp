@@ -245,5 +245,23 @@ case 5:
   else
   {
   cout<<"\n dictonary is not empty"
+  {
+    cout<<"\nEnter Keyword which u want to delete:";
+  char k[20];
+  cin>>k;
+  if(d.root == NULL)
+  {
+  cout<<"\nNo any Keyword";
+  }
+  else
+  {
+  d.root = d.del(d.root,k);
+    }
+   }
+  }
+ }
+ while(ch<=5);
+ return 0;
 
 }
+
